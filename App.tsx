@@ -3,7 +3,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 // Added ScheduleSlot to types import to fix type errors in analysis logic
 import { Teacher, ClassSection, Subject, Assignment, WeeklySchedule, ScheduleSlot } from './types';
 import { DAYS_OF_WEEK, ICONS } from './constants';
-import scheduler from "./services/Scheduler";
+import { generateSchedule } from './services/scheduler';
 import { getScheduleAdvice } from './services/geminiService';
 import * as XLSX from 'xlsx';
 import html2canvas from 'html2canvas';
